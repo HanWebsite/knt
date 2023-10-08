@@ -62,7 +62,8 @@ for (let i = 0; i < threads; i++) {
      const parsedAddr = options.address.split(":");
      const addrHost = parsedAddr[0];
      const payload = "CONNECT " + options.address + ":443 HTTP/1.1\r\nHost: " + options.address + ":443\r\nConnection: Keep-Alive\r\n\r\n"; //Keep Alive
-     const buffer = new Buffer.from(payload);
+     const buffer = new Buffer.from(payload});
+     
  
      const connection = net.connect({
          host: options.host,
